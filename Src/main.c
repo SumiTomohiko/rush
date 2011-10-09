@@ -27,6 +27,7 @@
  *
  */
 
+#include <caml/callback.h>
 #include "zsh.mdh"
 #include "main.pro"
 
@@ -90,5 +91,10 @@ cygwin_premain0 (int argc, char **argv, void *myself)
 int
 main(int argc, char **argv)
 {
+    caml_main(argv);
     return (zsh_main(argc, argv));
 }
+
+/**
+ * vim: tabstop=4 shiftwidth=4 expandtab softtabstop=4
+ */

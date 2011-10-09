@@ -35,6 +35,9 @@
 #include "init.pro"
 
 #include "version.h"
+#include <assert.h>
+#include <caml/callback.h>
+#include <caml/mlvalues.h>
 
 /**/
 int noexitct = 0;
@@ -129,6 +132,19 @@ loop(int toplevel, int justonce)
 	use_exit_printed = 0;
 	intr();			/* interrupts on            */
 	lexinit();              /* initialize lexical state */
+	if (toplevel && interact) {
+            char line[1024];
+            char* pend = line + sizeof(line);
+            char* p = line;
+            while ((p < pend) && ((*p = hgetc()) != '\n')) {
+                p++;
+            }
+            *p = '\0';
+            value* closure_f = caml_named_value("eval_string");
+            assert(closure_f != NULL);
+            caml_callback(*closure_f, caml_copy_string(line));
+            continue;
+	}
 	if (!(prog = parse_event())) {	/* if we couldn't parse a list */
 	    hend(NULL);
 	    if ((tok == ENDINPUT && !errflag) ||
@@ -1557,3 +1573,7 @@ zsh_main(UNUSED(int argc), char **argv)
 		    : "use 'logout' to logout.");
     }
 }
+
+/**
+ * vim: tabstop=8 shiftwidth=4 expandtab softtabstop=4
+ */

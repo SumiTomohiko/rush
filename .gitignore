@@ -9,6 +9,7 @@ TAGS
 *~
 .*.sw?
 \#*
+.gdb_history
 
 /META-FAQ
 /config.cache
@@ -69,8 +70,9 @@ Src/*.mdh.tmp
 Src/*.mdhi
 Src/*.mdhs
 Src/*.syms
-Src/Makemod.in
 Src/Makemod
+Src/Makemod.in
+Src/TAGS
 Src/[_a-zA-Z0-9]*.pro
 Src/ansi2knr
 Src/bltinmods.list
@@ -81,15 +83,14 @@ Src/modules.index
 Src/modules.index.tmp
 Src/modules.stamp
 Src/patchlevel.h
+Src/rush
 Src/sigcount.h
 Src/signames.c
 Src/signames2.c
 Src/stamp-modobjs
 Src/stamp-modobjs.tmp
 Src/tags
-Src/TAGS
 Src/version.h
-Src/zsh
 Src/zshcurses.h
 Src/zshpaths.h
 Src/zshterm.h
@@ -137,3 +138,5 @@ Src/Zle/zle_things.h
 Src/Zle/zle_widget.h
 
 Test/*.tmp
+
+run

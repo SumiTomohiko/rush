@@ -50,7 +50,8 @@ DLLINK      = $(DLLD) $(LDFLAGS) $(LIBLDFLAGS) $(DLLDFLAGS) -o $@
 all: bin modules
 .PHONY: all
 
-bin: zsh$(EXEEXT)
+RUSH_EXE = rush$(EXEEXT)
+bin: $(RUSH_EXE)
 .PHONY: bin
 
 modules: headers
@@ -80,9 +81,15 @@ NDRUNPATH =
 
 EXTRAZSHOBJS = @EXTRAZSHOBJS@
 
-zsh$(EXEEXT): $(@L@IBZSH) $(@L@STMP) $(MAIN_OBJS) zsh.export $(EXTRAZSHOBJS)
+RUN_DIR = $(sdir_top)/run
+RUN_OBJ = $(RUN_DIR)/src/run.o
+
+$(RUSH_EXE): $(@L@IBZSH) $(@L@STMP) $(MAIN_OBJS) zsh.export $(EXTRAZSHOBJS) $(RUN_OBJ)
 	rm -f $@
-	$(@L@DRUNPATH) $(LINK) $(MAIN_OBJS) $(EXTRAZSHOBJS) $(@L@LIST) $(ZSH_@E@XPORT) $(@L@IBZSH) $(LIBS)
+	$(@L@DRUNPATH) $(LINK) $(RUN_OBJ) $(MAIN_OBJS) $(EXTRAZSHOBJS) $(@L@LIST) $(ZSH_@E@XPORT) $(@L@IBZSH) -L$$(ocamlc -where) -lnums -lasmrun -lunix $(LIBS)
+
+$(RUN_OBJ):
+	cd $(RUN_DIR) && omake
 
 $(LIBZSH): $(LIBOBJS) $(NSTMP)
 	rm -f $@

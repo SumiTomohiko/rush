@@ -474,6 +474,8 @@ case " ${LIBLDFLAGS+$LIBLDFLAGS }" in
   *) strip_libldflags=false ;;
 esac
 
+OCAML_DIR=$(ocamlc -where)
+CFLAGS="${CFLAGS} -I ${OCAML_DIR}"
 AC_SUBST(CFLAGS)dnl
 AC_SUBST(LDFLAGS)dnl
 AC_SUBST(EXELDFLAGS)dnl
