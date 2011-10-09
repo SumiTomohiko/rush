@@ -418,8 +418,6 @@ if test -n "$auto_cflags" && test ."$ansi2knr" != .yes; then
   if test "${enable_zsh_debug}" = yes; then
     if test -n "$GCC"; then
       CFLAGS="$CFLAGS -Wall -Wmissing-prototypes -ggdb"
-    else
-      CFLAGS="$CFLAGS -g"
     fi
   else
     if test -n "$GCC"; then
@@ -429,6 +427,7 @@ if test -n "$auto_cflags" && test ."$ansi2knr" != .yes; then
     fi
   fi
 fi
+CFLAGS="$CFLAGS -g"
 if test -n "$auto_ldflags"; then
   case "${enable_zsh_debug}$host_os" in
     yesaix*|yeshpux*|yesnetbsd*|yesopenbsd*) ;;  # "ld -g" is not valid on these systems
