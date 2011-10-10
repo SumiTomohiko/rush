@@ -603,7 +603,7 @@ s,\\\\,\\,g; s,\$\$,$,g
 EOF_SED
 zsh_transform_name=`echo "${program_transform_name}" | sed -f conftestsed`
 rm -f conftestsed
-tzsh_name=`echo zsh | sed -e "${zsh_transform_name}"`
+tzsh_name=`echo rush | sed -e "${zsh_transform_name}"`
 # Double any \ or $ in the transformed name that results.
 cat <<\EOF_SED >> conftestsed
 s,\\,\\\\,g; s,\$,$$,g
