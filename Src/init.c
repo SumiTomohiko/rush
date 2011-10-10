@@ -1530,6 +1530,7 @@ zsh_main(UNUSED(int argc), char **argv)
     setupshin(runscript);
     init_misc();
 
+    signal_default(SIGCHLD);
     for (;;) {
 	/*
 	 * See if we can free up some of jobtab.
