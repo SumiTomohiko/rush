@@ -11,6 +11,7 @@ TAGS
 .*.sw?
 \#*
 .gdb_history
+.ditz-config
 
 /META-FAQ
 /config.cache

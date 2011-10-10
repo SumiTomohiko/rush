@@ -1,0 +1,18 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Change current working directory with a directory name such as "..".
+desc: ""
+type: :task
+component: core
+release: 
+reporter: Tomohiko Sumi <SumiTomohiko@neko-daisuki.ddo.jp>
+status: :unstarted
+disposition: 
+creation_time: 2011-10-10 18:25:38.514317 Z
+references: []
+
+id: 1096913afadee36e55424c273a25c36ebe4685a1
+log_events: 
+- - 2011-10-10 18:25:39.199811 Z
+  - Tomohiko Sumi <SumiTomohiko@neko-daisuki.ddo.jp>
+  - created
+  - ""

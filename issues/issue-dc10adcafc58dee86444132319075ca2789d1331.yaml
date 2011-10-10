@@ -1,0 +1,18 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Read ~/.rushrc.
+desc: Read ~/.rushrc after reading ~/.zshrc for overwriting settings.
+type: :task
+component: core
+release: 
+reporter: Tomohiko Sumi <SumiTomohiko@neko-daisuki.ddo.jp>
+status: :unstarted
+disposition: 
+creation_time: 2011-10-10 18:26:38.303082 Z
+references: []
+
+id: dc10adcafc58dee86444132319075ca2789d1331
+log_events: 
+- - 2011-10-10 18:26:39.180824 Z
+  - Tomohiko Sumi <SumiTomohiko@neko-daisuki.ddo.jp>
+  - created
+  - ""

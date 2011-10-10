@@ -1,0 +1,18 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Change install directories from zsh to rush.
+desc: ""
+type: :task
+component: core
+release: 
+reporter: Tomohiko Sumi <SumiTomohiko@neko-daisuki.ddo.jp>
+status: :unstarted
+disposition: 
+creation_time: 2011-10-10 18:23:41.797632 Z
+references: []
+
+id: bd35d4896df9ce75ac45ac023dce64a8f6db9774
+log_events: 
+- - 2011-10-10 18:23:42.519161 Z
+  - Tomohiko Sumi <SumiTomohiko@neko-daisuki.ddo.jp>
+  - created
+  - ""
