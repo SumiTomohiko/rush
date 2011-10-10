@@ -1,0 +1,18 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Use aliases.
+desc: Current implementation ignores aliases.
+type: :task
+component: core
+release: 
+reporter: Tomohiko Sumi <SumiTomohiko@neko-daisuki.ddo.jp>
+status: :unstarted
+disposition: 
+creation_time: 2011-10-10 21:14:37.166714 Z
+references: []
+
+id: 09103de325e8d9b258f9e58dd3cf2c2ad83b886c
+log_events: 
+- - 2011-10-10 21:14:37.587147 Z
+  - Tomohiko Sumi <SumiTomohiko@neko-daisuki.ddo.jp>
+  - created
+  - ""
