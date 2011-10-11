@@ -1,0 +1,18 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: cd cannot change a directory string.
+desc: cd /foo cannot change a directory string which keeps as [~].
+type: :bugfix
+component: core
+release: 
+reporter: Tomohiko Sumi <SumiTomohiko@neko-daisuki.ddo.jp>
+status: :unstarted
+disposition: 
+creation_time: 2011-10-11 05:36:27.745667 Z
+references: []
+
+id: 2a5cbfdb454d12081d3839726c396d11128f2500
+log_events: 
+- - 2011-10-11 05:36:28.393584 Z
+  - Tomohiko Sumi <SumiTomohiko@neko-daisuki.ddo.jp>
+  - created
+  - ""

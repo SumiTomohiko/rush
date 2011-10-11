@@ -1,0 +1,18 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: Enable autocomplete.
+desc: ""
+type: :task
+component: core
+release: 
+reporter: Tomohiko Sumi <SumiTomohiko@neko-daisuki.ddo.jp>
+status: :unstarted
+disposition: 
+creation_time: 2011-10-11 05:35:02.696304 Z
+references: []
+
+id: b0c134605452f34351b744fd1819772cab82f7cc
+log_events: 
+- - 2011-10-11 05:35:03.124842 Z
+  - Tomohiko Sumi <SumiTomohiko@neko-daisuki.ddo.jp>
+  - created
+  - ""
