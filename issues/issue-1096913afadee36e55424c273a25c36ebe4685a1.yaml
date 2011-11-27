@@ -3,7 +3,7 @@ title: Change current working directory with a directory name such as "..".
 desc: ""
 type: :task
 component: core
-release: 
+release: 0.1.0
 reporter: Tomohiko Sumi <SumiTomohiko@neko-daisuki.ddo.jp>
 status: :unstarted
 disposition: 
@@ -15,4 +15,8 @@ log_events:
 - - 2011-10-10 18:25:39.199811 Z
   - Tomohiko Sumi <SumiTomohiko@neko-daisuki.ddo.jp>
   - created
+  - ""
+- - 2011-11-27 15:52:18.013469 Z
+  - Tomohiko Sumi <SumiTomohiko@neko-daisuki.ddo.jp>
+  - assigned to release 0.1.0 from unassigned
   - ""

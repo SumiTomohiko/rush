@@ -3,7 +3,7 @@ title: cd cannot change a directory string.
 desc: cd /foo cannot change a directory string which keeps as [~].
 type: :bugfix
 component: core
-release: 
+release: 0.1.0
 reporter: Tomohiko Sumi <SumiTomohiko@neko-daisuki.ddo.jp>
 status: :unstarted
 disposition: 
@@ -15,4 +15,8 @@ log_events:
 - - 2011-10-11 05:36:28.393584 Z
   - Tomohiko Sumi <SumiTomohiko@neko-daisuki.ddo.jp>
   - created
+  - ""
+- - 2011-11-27 15:52:41.784510 Z
+  - Tomohiko Sumi <SumiTomohiko@neko-daisuki.ddo.jp>
+  - assigned to release 0.1.0 from unassigned
   - ""
