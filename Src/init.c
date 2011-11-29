@@ -36,6 +36,7 @@
 
 #include "version.h"
 #include <assert.h>
+#include <unistd.h>
 #include <caml/callback.h>
 #include <caml/mlvalues.h>
 
@@ -143,6 +144,8 @@ loop(int toplevel, int justonce)
             value* closure_f = caml_named_value("eval_string");
             assert(closure_f != NULL);
             caml_callback(*closure_f, caml_copy_string(line));
+            zsfree(pwd);
+            ztrdup(getcwd(NULL, 0));
             continue;
 	}
 	if (!(prog = parse_event())) {	/* if we couldn't parse a list */

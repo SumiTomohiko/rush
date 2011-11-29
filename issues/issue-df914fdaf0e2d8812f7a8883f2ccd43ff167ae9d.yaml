@@ -1,0 +1,18 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: If a current working directory in prompts has ${HOME}, it must be ~.
+desc: run may have to callback zsh functions.
+type: :bugfix
+component: core
+release: 
+reporter: Tomohiko Sumi <SumiTomohiko@neko-daisuki.ddo.jp>
+status: :unstarted
+disposition: 
+creation_time: 2011-11-29 20:19:15.628946 Z
+references: []
+
+id: df914fdaf0e2d8812f7a8883f2ccd43ff167ae9d
+log_events: 
+- - 2011-11-29 20:19:16.117839 Z
+  - Tomohiko Sumi <SumiTomohiko@neko-daisuki.ddo.jp>
+  - created
+  - ""
