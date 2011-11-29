@@ -3,7 +3,7 @@ title: If a current working directory in prompts has ${HOME}, it must be ~.
 desc: run may have to callback zsh functions.
 type: :bugfix
 component: core
-release: 
+release: 0.1.0
 reporter: Tomohiko Sumi <SumiTomohiko@neko-daisuki.ddo.jp>
 status: :unstarted
 disposition: 
@@ -15,4 +15,8 @@ log_events:
 - - 2011-11-29 20:19:16.117839 Z
   - Tomohiko Sumi <SumiTomohiko@neko-daisuki.ddo.jp>
   - created
+  - ""
+- - 2011-11-29 20:22:45.202133 Z
+  - Tomohiko Sumi <SumiTomohiko@neko-daisuki.ddo.jp>
+  - assigned to release 0.1.0 from unassigned
   - ""
